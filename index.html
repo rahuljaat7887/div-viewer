@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>fullpage transition</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>  
+
+  
+  <div class="tile-container">
+    <div class="tile hero-1" onclick="myFunction1()">
+      <div class="card1 card">Card 1</div>
+      <div class="card2 card">Card 2</div>
+      <div class="card3 card">Card 3</div>
+      <div class="card4 card">Card 4</div>
+    </div>
+    <div class="tile hero-2" onclick="myFunction2()"></div>
+    <div class="tile hero-3" onclick="myFunction3()"></div>
+    <div class="tile hero-4" onclick="myFunction4()"></div>
+  </div>  
+</main>
+
+<div class="page-container">
+  <div class="page hero-1">
+    <div class="card1 card">Card 1</div>
+    <div class="card2 card">Card 2</div>
+    <div class="card3 card">Card 3</div>
+    <div class="card4 card">Card 4</div>
+    <button onclick="close1()">close</button>
+  </div>
+  <div class="page hero-2">
+    <button onclick="close2()">close</button>
+  </div>
+  <div class="page hero-3">
+    <button onclick="close3()">close</button>
+  </div>
+  <div class="page hero-4">
+    <button onclick="close4()">close</button>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.3/TweenMax.min.js'></script><script  src="./script.js"></script>
+  <script>
+     function myFunction2() {
+            var element = document.querySelector(".hero-1")
+            
+            document.querySelector(".hero-1").style.bottom = "600px";
+            document.querySelector(".hero-1").style.transition = "1.8s linear";
+            document.querySelector(".hero-3").style.top = "600px";
+            document.querySelector(".hero-3").style.transition = "1.2s linear";
+        }
+     function close2() {
+            var element = document.querySelector(".hero-2")
+            
+            document.querySelector(".hero-1").style.bottom = "0px";
+            document.querySelector(".hero-3").style.top = "0px";
+            document.querySelector(".hero-1").style.transition = "0.9s";
+            document.querySelector(".hero-3").style.transition = "0.9s";
+        }
+  </script>
+</body>
+</html>

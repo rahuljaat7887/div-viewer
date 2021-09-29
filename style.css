@@ -1,0 +1,82 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background: #1a1616;
+}
+
+main {
+  height: 100%;
+}
+
+
+.tile-container {
+  position: absolute;
+  left: -150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 100vh; */
+  width: 100%;
+  user-select: none;
+}
+
+.tile {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 14px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.page-container {
+  visibility: hidden;
+}
+
+.page {
+  cursor: pointer;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  position: fixed;
+  visibility: hidden;
+}
+.card{
+  width: 30%;
+  margin: auto 10px;
+  background-color: burlywood;
+  height: 90%;
+  visibility: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-1 {
+  background: #F4DB33;
+  display: flex;
+}
+
+.hero-2 {
+  background: #972FF8;
+}
+
+.hero-3 {
+  background: #7DD6FE;
+}
+
+.hero-4 {
+  background: #DC3C84;
+}
+button{
+  position: fixed;
+  right: 35px;
+  top: 25px;
+}
